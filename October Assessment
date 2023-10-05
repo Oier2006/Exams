@@ -1,0 +1,14 @@
+#Question 1
+#Student name: Oier
+
+taylorSwiftSongs = ["Love story", "Shake it off", "Delicate", "Wildest Dreams", "All Too Well", "Blank Space", "Bad Blood", "You belomg with me", "Red", "22"]#question a
+
+song = input("Please enter a song:") #question b
+
+taylorSwiftSongs.index(song)#List for Positions
+
+if song == ("taylorSwiftSongs"):
+    print("the song",song,"is in the list at position",len,"songs")
+else:
+    print("Sorry, the song,",song,"is not in Taylor Swift's song list.")
+#line 8-13 is question c
