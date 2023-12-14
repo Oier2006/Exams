@@ -1,0 +1,32 @@
+#Student Name = Oier
+#This calculator can only add and subtract (i)
+name = input("Please enter your name:") #(ii)
+print("Hello", name)
+print("Welcome to the addition and subtraction calculator.") #line 4 and 5 (iii)
+num1 = int(input("Enter the first number:")) #line 6 and 7 (iv)
+num2 = int(input("Enter the second number:"))
+
+print('Do you want me to (a)dd or (s)ubtract?')  
+choice = input()
+
+while choice:
+    if choice == 'A''a': #line 12 and 14 (vi)
+        print (num1 + num2)
+    elif choice == 'S''s':
+        print (num1 - num2)
+    else:
+        print("Invalid option") #(vii)
+
+#Student name = oier
+squaredNumbers = []
+#for squared numbers in range(20):
+    #squaredNumbers.append(20)
+
+
+squaredNumbers = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400] #(i)
+for squaredNumbers in range(20):
+    
+print([1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400]) #(ii)
+
+number = int(input("Which squared number will I display (1-20)?:"))#(iii)
+    
