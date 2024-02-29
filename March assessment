@@ -1,0 +1,35 @@
+#Student Name= Oier
+
+
+print("Household budget calculator. Enter the following information: ") #(i)
+num_adults = int(input("Number of adults inside the household: "))  #(i)
+num_child = int(input("Number of children inside the household: "))  #(i)
+
+
+food_budget = 300
+cost_food_adult = 50
+cost_food_child = 35
+
+child_allowance = 140
+
+
+inflation = float(input("Inflation Rate (e.g. 0.05 for 5% inflation): ")) #(iii)
+
+print("Children's allowance total: €", child_allowance*num_child)
+
+if num_child > 3:
+     child_allowance + 20
+else:
+     child_allowance+0
+
+print("Total household food cost: €", cost_food_adult*num_adults+cost_food_child*num_child)
+
+totalFood = (cost_food_adult*num_adults+cost_food_child*num_child)
+foodInflation = (totalFood*inflation)
+
+print("Total household food cost with inflation:", round(foodInflation+totalFood,2)) #(iii) (iv)
+
+totalInflation = (cost_food_adult+cost_food_child*inflation)
+
+print("Percentage spend on food: ", totalInflation%child_allowance,"%") #(v)
+print("Budget remaining after food spend: €", child_allowance + food_budget - totalInflation) #(vi) 
