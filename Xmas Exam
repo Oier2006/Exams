@@ -1,0 +1,50 @@
+#Question 1
+#Name: Oier
+
+from random import choice
+
+fruits = ['apple', 'cherry', 'orange']
+
+random_fruit_1 = choice(fruits)
+print("Random Fruit 1:", random_fruit_1)#(i)
+
+random_fruit_2 = choice(fruits)#lines 11-15 (ii)
+print("Random Fruit 2:", random_fruit_2)
+
+random_fruit_3 = choice(fruits)
+print("Random Fruit 3:", random_fruit_3)
+
+# if random_fruit_1 == 'cherry':#(iii)
+#     print("First fruit is cherry")
+#     
+# if random_fruit_1 == random_fruit_2:#(iv)
+#     print("First pair match")
+#     print("First pair are cherries")#(v)
+
+if random_fruit_1 == random_fruit_2:#lines 24-29 (vi)
+    print("Matching pair")
+elif random_fruit_1 == random_fruit_3:
+    print("Matching pair")
+elif random_fruit_2 == random_fruit_3:
+    print("Matching pair")
+    
+count = 0
+for count in range(100):#(vii)
+    if count == (fruits.count('apple')):
+        apple = count + 1
+        print("Apple", apple)
+    elif count == (fruits.count('cherry')):
+        cherry = count + 1
+        print("Cherry", cherry)
+    else:
+        orange = count + 1
+        print("Orange", orange)
+
+#Question 2
+
+
+print("Split Bill Calculator")
+amount = int(input("How much is the bill?: "))
+people = int(input("How many people?: "))
+owe = amount/people
+print("You each owe", owe)
